@@ -1,0 +1,288 @@
+:root {
+
+  /* blue ones  */
+  --blue--light: #22595C;
+  --blue--medium: #19464C;
+  --blue--high: #0D323B;
+  --blue--dark: #02222D;
+
+  /* green ones  */
+  --green--light: #9FF4B1;
+  --green--medium: #89E099;
+  --green--high: #65C272;
+  --green--dark: #40A650;
+
+}
+
+/* geral-configs ----------------------------------------------------- */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-color-home {
+  background-image: url(../images/wallpaper.png);
+}
+
+.bg-color-home-2 {
+  background-color: #02222D;
+}
+
+/* containers ----------------------------------------------------- */
+.container {
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* scroll bar -----------------------------------------------------*/
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--blue--dark);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid var(--blue--dark);
+}
+
+/* main ---------------------------------------------------------------------------------- */
+
+.left-box-main {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-box-main {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-main {
+  width: 66%;
+}
+
+.h2-main {
+  color: var(--green--light);
+  font-weight: 700;
+  text-align: start;
+}
+
+.box-login {
+  width: 70%;
+  height: 80vh;
+  background-color: var(--blue--high);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px #01161d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-login {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.label-login {
+  color: white;
+  margin: 10px;
+}
+
+.btn-login {
+  padding: 15px 75px;
+  cursor: pointer;
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: .5s;
+}
+
+.btn-login:hover {
+  transition: .5s;
+  border: 1px solid var(--green--dark);
+  background-color: var(--green--dark);
+}
+
+.link-to-register {
+  color: white;
+  font-size: 18px;
+  transition: .5s;
+}
+
+.link-to-register:hover {
+  transition: .5s;
+  text-decoration: underline;
+  color: #40A650;
+}
+
+/* new form pata o type text ----------------------------------------------------- */
+
+.entryarea-text {
+  position: relative;
+  width: 100%;
+  /* border: 1px solid white; */
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  margin: 15px;
+}
+
+.input-login {
+  position: absolute;
+  width: 80%;
+  outline: none;
+  font-size: 20px;
+  padding: 0 30px;
+  line-height: 80px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: transparent;
+  transition: 0.1s ease;
+  z-index: 1111;
+  color: white;
+}
+
+.labelline-text {
+  position: absolute;
+  width: 80%;
+  font-size: 18px;
+  color: white;
+  padding: 0px 25px;
+  margin: 0px 20px;
+  background-color: var(--blue--high);
+  transition: 0.2s ease;
+  /* border: 1px solid white; */
+}
+
+.input-login:focus {
+  color: var(--green--high);
+  border: 3px solid var(--green--high);
+  border-radius: 10px;
+}
+
+.input-login:focus+.labelline-text,
+.input-login:valid+.labelline-text {
+  color: var(--green--high);
+  border-radius: 10px;
+  height: 30px;
+  line-height: 30px;
+  width: 35%;
+  transform: translate(-30px, -40px) scale(0.88);
+  z-index: 1111;
+  padding: 0px 10px;
+}
+
+/* new form pata o type password ----------------------------------------------------- */
+
+.entryarea-pass {
+  position: relative;
+  width: 100%;
+  /* border: 1px solid white; */
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  margin: 15px;
+}
+
+.input-login {
+  position: absolute;
+  width: 80%;
+  outline: none;
+  font-size: 20px;
+  padding: 0 30px;
+  line-height: 80px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: transparent;
+  transition: 0.1s ease;
+  z-index: 1111;
+  color: white;
+}
+
+.labelline-pass {
+  position: absolute;
+  width: 80%;
+  font-size: 18px;
+  color: white;
+  padding: 0px 25px;
+  margin: 0px 20px;
+  background-color: var(--blue--high);
+  transition: 0.2s ease;
+  /* border: 1px solid white; */
+}
+
+.input-login:focus {
+  color: var(--green--high);
+  border: 3px solid var(--green--high);
+  border-radius: 10px;
+}
+
+.input-login:focus+.labelline-pass,
+.input-login:valid+.labelline-pass {
+  color: var(--green--high);
+  border-radius: 10px;
+  height: 30px;
+  line-height: 30px;
+  width: 37%;
+  transform: translate(-30px, -40px) scale(0.88);
+  z-index: 1111;
+  padding: 0px 10px;
+}
+
+/* -------------------------- */
+
+.check-admin{
+  color: white;
+  border: 1px solid transparent;
+}
+
+.check-admin-text{
+  font-size: 18px;
+  color: white;
+}

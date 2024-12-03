@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL TRAINING</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- icons  -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-straight/css/uicons-bold-straight.css'>
+
+    <!-- js -->
+    <script src="./cadastroTreinamento.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header-page">
+
+        <h2 class="header-h2">Administrador</h2>
+
+        <nav>
+            <ul>
+                <a href="../perfil-adm/index.html" class="header-icon"><i class="fi fi-bs-user"></i></a>
+                <a href="../index.html" class="header-icon"><i class="fi fi-bs-exit"></i></a>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="container bg-color-home">
+
+        <form action="" class="form">
+
+            <!-- box input -->
+            <div class="box-input">
+                <label for="" class="label">Nome do treinamento: </label>
+                <input type="text" name="" id="nome" class="input" required>
+            </div>
+            
+            <!-- box input -->
+            <div class="box-input">
+                <label for="" class="label">Duração (Horas): </label>
+                <input type="number" name="" id="horas" class="input" required>
+            </div>
+           
+            <!-- box input -->
+            <div class="box-input">
+                <label for="" class="label">Data de lançamento: </label>
+                <input type="date" name="" id="dataLancamento" class="input" required>
+            </div>
+            
+            <!-- box input -->
+            <div class="box-input">
+                <label for="" class="label">Relevância: </label>
+                <select class="input" id="relevancia" required>
+                    <option disabled selected class="option">Selecione uma opção</option>
+                    <option value="opcional" class="option">Opcional</option>
+                    <option value="obrigatorio" class="option">Obrigatório</option>
+                </select>
+            </div>
+            
+            <!-- box input -->
+            <div class="box-input-textarea">
+                <label for="" class="label">Descrição: </label>
+                <textarea class="textarea" aria-label="With textarea" required id="descricao"></textarea>
+            </div>
+            
+
+            <button class="btn-form" type="submit" onclick="cadastrar(); return false;">Adicionar</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

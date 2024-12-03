@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL TRAINING</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="./script.js"></script>
+
+    <!-- icons  -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-straight/css/uicons-bold-straight.css'>
+
+
+</head>
+
+<body>
+
+    <header class="header-page">
+
+        <h2 class="header-h2">Funcionario</h2>
+
+        <nav>
+            <ul>
+                <a href="../../tela-funcionario/index.html" class="header-icon"><i class="fi fi-bs-exit"></i></a>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="container bg-color-home">
+
+        <div class="left-box-main">
+
+            <h2 class="h2-left">Deseja deletar sua conta?</h2>
+            <h4 class="h4-left">Nos diga o porquê (opicional):</h4>
+            <form action="" class="form-left">
+                <select class="input-left">
+                    <option value="" disabled selected class="select-item">Selecione uma opção</option>
+                    <option value="" class="select-item">Não consigo usar</option>
+                    <option value="" class="select-item">Muito complicado!</option>
+                    <option value="" class="select-item">Tenho outra conta.</option>
+                    <option value="" class="select-item">Sai do emprego</option>
+                </select>
+                <button type="submit" class="btn-left" onclick="deletar(); return false">Deletar</button>
+                <!-- <a href="../../tela-delete/index.html" class="btn-left">Deletar</a> -->
+            </form>
+
+        </div>
+
+        <div class="right-box-main">
+
+            <h2 class="h2-right">ALTERAR EMAIL</h2>
+
+            <form action="" class="form-out">
+                <div class="form">
+                    <input class="input" type="text" required id="email">
+                    <div class="label">Digite seu novo email: </div>
+                </div>
+                <button class="btn" id="alterar-email" type="submit"
+                    onclick="alteraEmail(); return false">Alterar</button>
+            </form>
+
+            <h2 class="h2-right">ALTERAR TELEFONE</h2>
+
+            <form action="" class="form-out">
+                <div class="form">
+                    <input class="input" type="text" required id="telefone">
+                    <div class="label">Digite seu novo telefone: </div>
+                </div>
+                <button class="btn" id="alterar-tel" type="submit" onclick="alteraTel(); return false">Alterar</button>
+            </form>
+
+            <h2 class="h2-right">ALTERAR SENHA</h2>
+
+            <form action="" class="form-out">
+                <div class="form">
+                    <input class="input" type="text" required id="senha">
+                    <div class="label">Digite sua nova senha: </div>
+                </div>
+                <button class="btn" id="alterar-senha" type="submit"
+                    onclick="alteraSenha(); return false">Alterar</button>
+            </form>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+:root {
+
+  /* blue ones  */
+  --blue--light: #22595C;
+  --blue--medium: #19464C;
+  --blue--high: #0D323B;
+  --blue--dark: #02222D;
+
+  /* green ones  */
+  --green--light: #9FF4B1;
+  --green--medium: #89E099;
+  --green--high: #65C272;
+  --green--dark: #40A650;
+
+}
+
+/* geral-configs */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-color-home {
+  background-image: url(../images/wallpaper.png);
+}
+
+.bg-color-home-2 {
+  background-color: #02222D;
+}
+
+/* containers */
+.container {
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* scroll bar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--blue--dark);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid var(--blue--dark);
+}
+
+/* parte da direita e esquerda---------------------------------------------------------------- */
+
+/* (esquerda) */
+
+.left-box-main {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-div{
+  width: 100%;
+  height: 25vh;
+  padding: 30px;
+}
+
+.title-div-h2{
+  font-size: 50px;
+  color: var(--green--dark);
+}
+
+.subtitle-div{
+  width: 100%;
+  height: 70vh;
+  padding: 0px 90px 0px 30px;
+}
+
+.subtitle-div-p{
+  font-size: 19px;
+  color: rgb(235, 235, 235);
+  line-height: 30px;
+}
+
+.digital-span{
+  font-size: 20px;
+  color: var(--green--light);
+}
+
+
+/* (direita) */
+
+.right-box-main {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-main {
+  width: 66%;
+}
+
+.h2-main {
+  color: var(--green--light);
+  font-weight: 700;
+  text-align: start;
+}
+
+/* btn e link ----------------------------- */
+
+.btn-cadastro {
+  padding: 15px 75px;
+  cursor: pointer;
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: .5s;
+}
+
+.btn-cadastro:hover {
+  transition: .5s;
+  border: 1px solid var(--green--dark);
+  background-color: var(--green--dark);
+}
+
+.link-to-register {
+  color: white;
+  font-size: 18px;
+  margin: 8px;
+}
+
+.link-to-register:hover {
+  transition: .5s;
+  text-decoration: underline;
+  color: #40A650;
+}
+
+/* tela registro ------------------------------------------ */
+
+.register-box{
+  width: 80%;
+  height: 95vh;
+  /* border: 1px solid white; */
+  background-color: var(--blue--high);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px #01161d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+
+.register-form {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* input ------------------------------------------------------------------- */
+
+.input-register {
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  outline: none;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.label-register {
+  color: white;
+  margin: 1px 15px;
+  margin-top:20px;
+  font-size: 15px;
+}
+
+.input-register:focus{
+  border: 2px solid var(--green--high);
+  color: var(--green--high);
+  font-size: 20px;
+  transition: 0.2s;
+}

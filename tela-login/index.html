@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL TRAINING</title>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- js -->
+    <script src="./loginGeral.js"></script>
+
+</head>
+
+<body>
+
+    <!-- tela login  -->
+    <div class="container bg-color-home">
+
+        <!-- parte esquerda -->
+        <div class="left-box-main">
+            <h2 class="h2-main">Organize suas atividades em um só lugar,</h2>
+            <h2 class="h2-main">apenas com a Digital Training!</h2>
+            <img src="../images/software-tester-animate.svg" alt="" class="image-main">
+        </div>
+
+        <!-- parte direita -->
+        <div class="right-box-main">
+
+            <div class="box-login">
+
+                <form action="" class="form-login">
+
+                    <div class="entryarea-text">
+                        <input type="text" autocomplete="off" class="input-login" id="login" required>
+                        <div class="labelline-text">Digite seu login</div>
+                    </div>
+
+                    <div class="entryarea-pass">
+                        <input type="password" class="input-login" id="senha" required>
+                        <div class="labelline-pass">Digite sua senha</div>
+                    </div>
+
+                    <input type="submit" class="btn-login" onclick="logar(); return false;">
+
+
+                    <label for="admin">
+                        <input type="checkbox" id="admin" class="check-admin">
+                        <span class="check-admin-text">Sou um administrador</span>
+                      </label>
+                      
+
+                </form>
+                
+
+                <a href="../tela-cadastro/index.html" class="link-to-register">Não é cadastrado? Clique aqui!</a>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

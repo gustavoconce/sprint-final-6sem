@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- js -->
+    <script src="./cadastroUsuario.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- tela registro  -->
+    <div class="container bg-color-home">
+
+        <!-- box da esquerda (h2) --------------------------------------------------------- -->
+        <div class="left-box-main">
+
+            <div class="title-div">
+                <h2 class="title-div-h2">Porquê ser Digital Training?</h2>
+            </div>
+
+            <div class="subtitle-div">
+                <p class="subtitle-div-p">
+                    Use o <span class="digital-span">Digital Training</span>, o aplicativo definitivo para gerenciar e
+                    otimizar as atividades e treinamentos da sua empresa! Com uma interface intuitiva, o <span
+                        class="digital-span">Digital Training</span> oferece uma visão clara e detalhada das tarefas e
+                    cursos disponíveis para cada funcionário. Os gerentes podem facilmente acompanhar o progresso das
+                    equipes, visualizar atividades pendentes e obrigatórias, e garantir que todos estejam atualizados
+                    com as exigências da empresa. Personalize notificações, defina prioridades e mantenha sua equipe
+                    sempre no caminho certo com o <span class="digital-span">Digital Training</span>. Transforme a
+                    gestão das atividades da sua empresa e aumente a eficiência com esta solução inovadora. Experimente
+                    e descubra como simplificar sua rotina corporativa pode ser fácil e eficaz!
+                </p>
+            </div>
+
+        </div>
+
+        <!-- box da direita (form) --------------------------------------------------------- -->
+        <div class="right-box-main">
+
+            <div class="register-box">
+
+                <form action="" class="register-form">
+
+                    <label for="" class="label-register">Nome: </label>
+                    <input id="register-name" type="text" class="input-register" autocomplete="off" required>
+
+                    <label for="" class="label-register">Sobrenome: </label>
+                    <input id="register-lastname" type="text" class="input-register" autocomplete="off" required>
+
+                    <label for="" class="label-register">Email: </label>
+                    <input id="register-email" type="email" class="input-register" autocomplete="off" required>
+
+                    <label for="" class="label-register">Telefone: </label>
+                    <input id="register-tel" type="tel" inputmode="numeric" class="input-register" autocomplete="off"
+                        required>
+
+                    <label for="" class="label-register">Crie uma senha: </label>
+                    <input id="register-pass" type="password" class="input-register" autocomplete="off" required>
+
+                    <input type="submit" class="btn-cadastro" onclick="cadastrar(); return false;">
+                </form>
+
+                <a href="../tela-login/index.html" class="link-to-register">Já possui uma conta? Clique aqui!</a>
+
+            </div>
+
+            <!-- right part div  -->
+        </div>
+        <!-- container div  -->
+    </div>
+</body>
+
+</html>

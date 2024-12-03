@@ -1,0 +1,123 @@
+:root {
+
+    /* blue ones  */
+    --blue--light: #22595C;
+    --blue--medium: #19464C;
+    --blue--high: #0D323B;
+    --blue--dark: #02222D;
+  
+    /* green ones  */
+    --green--light: #9FF4B1;
+    --green--medium: #89E099;
+    --green--high: #65C272;
+    --green--dark: #40A650;
+  
+  }
+  
+  /* geral-configs ----------------------------------------------------- */
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .bg-color-home {
+    background-image: url(../images/tela-delete.png);
+  }
+  
+  .bg-color-home-2 {
+    background-color: #02222D;
+  }
+  
+  /* containers ----------------------------------------------------- */
+  .container {
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* scroll bar -----------------------------------------------------*/
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--blue--dark);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid var(--blue--dark);
+  }
+  
+  /* main ---------------------------------------------------------------------------------- */
+
+.left-box-main {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-box-main {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-main {
+    width: 66%;
+  }
+  
+  .h2-main {
+    color: var(--green--light);
+    font-weight: 700;
+    text-align: start;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.h4-main{
+    color: var(--green--light);
+    margin: 10px;
+  }
+
+  .link-delete{
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    transition: .5s;
+    background-color: transparent;
+}
+
+.link-delete:hover{
+    transition: .5s;
+    border: 2px solid var(--green--dark);
+    background-color: var(--green--dark);
+  }
+  
